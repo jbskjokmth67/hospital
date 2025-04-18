@@ -1,0 +1,434 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_h1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="sitelock-site-verification" content="7167" /><meta name="viewport" content="width=device-width; initial-scale=1.0" /><title>
+GB
+</title><link rel="stylesheet" type="text/css" href="admin.css" /><link rel="stylesheet" type="text/css" href="aiims.css" title="styles0" /><link rel="stylesheet" type="text/css" href="aiimsWhite.css" title="styles1" /><link rel="stylesheet" type="text/css" href="aiimsDark.css" title="styles2" /><link rel="stylesheet" type="text/css" href="aiimsBlue.css" title="styles3" />
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script src="jquery.sheetswitch.js" type="text/javascript"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script src="bootstrap-dropdown-on-hover.js" type="text/javascript" ></script>
+<script>
+$(function () {
+$("#navDemo").bootstrapDropdownOnHover();
+$(".theme1").on("click", function () {
+$('#imgChange').attr('src', 'logoInfo2.png');
+});
+$(".theme0").on("click", function () {
+$('#imgChange').attr('src', 'logoInfo.png');
+});
+$(".theme2").on("click", function () {
+$('#imgChange').attr('src', 'logoInfo.png');
+});
+$(".theme3").on("click", function () {
+$('#imgChange').attr('src', 'logoInfo.png');
+});
+var c = readCookie('style');
+if (c == 'styles1') {
+$('#imgChange').attr('src', 'logoInfo2.png');
+} else {
+$('#imgChange').attr('src', 'logoInfo.png');
+}
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$('#incfont').click(function () {
+curSize = parseInt($('.innerPanel').css('font-size')) + 2;
+if (curSize <= 18)
+$('.innerPanel').css('font-size', curSize);
+});
+
+$('#decfont').click(function () {
+curSize = parseInt($('.innerPanel').css('font-size')) - 2;
+if (curSize >= 11)
+$('.innerPanel').css('font-size', curSize);
+});
+
+$('#resetfont').click(function () {
+curSize = parseInt($('.innerPanel').css('font-size')) - 0;
+if (curSize = 14)
+$('.innerPanel').css('font-size', curSize);
+});
+});
+</script>
+<script type="text/javascript" src="jquery.anythingzoomer.js"></script>
+<script type="text/javascript">
+jQuery(function () {
+var comm = 0;
+jQuery("#zoom").anythingZoomer({
+clone: true
+});
+jQuery('#zoom').anythingZoomer('disable');
+jQuery("#zoom_in_out_img").addClass("imgDeactive");
+jQuery('.zoom_in_out').click(function () {
+if (comm == 0) {
+jQuery('#zoom').anythingZoomer('enable');
+//document.getElementById('zoom_in_out_img').src='img/pause.png';
+jQuery("#zoom_in_out_img").removeClass("imgDeactive");
+jQuery("#zoom_in_out_img").addClass("imgActive");
+comm = 1;
+} else {
+jQuery('#zoom').anythingZoomer('disable');
+//document.getElementById('zoom_in_out_img').src='img/play.png';
+jQuery("#zoom_in_out_img").removeClass("imgActive");
+jQuery("#zoom_in_out_img").addClass("imgDeactive");
+comm = 0;
+}
+});
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="responsive.css" /><link rel="stylesheet" type="text/css" href="animate.css" /><link rel="stylesheet" type="text/css" href="bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="font-awesome.min.css" /><style type="text/css">
+/* <![CDATA[ */
+#ctl00_menuBar img.icon { border-style:none;vertical-align:middle; }
+#ctl00_menuBar img.separator { border-style:none;display:block; }
+#ctl00_menuBar img.horizontal-separator { border-style:none;vertical-align:middle; }
+#ctl00_menuBar ul { list-style:none;margin:0;padding:0;width:auto; }
+#ctl00_menuBar ul.dynamic { z-index:1;margin-left:3px; }
+#ctl00_menuBar a { text-decoration:none;white-space:nowrap;display:block; }
+#ctl00_menuBar a.static { padding-left:0.15em;padding-right:0.15em; }
+#ctl00_menuBar a.popout-dynamic { background:url("/WebResource.axd?d=1NzHLmNHCqncElHRFjYxHZWx2Ldo4HZFCxqxAopx5Q1BWZBCuUxDP-oHexoo3V3fELhR26YDC84kn4f0D9FA0jNpQnc1&t=636996380731294402") no-repeat right center;padding-right:14px; }
+/* ]]> */
+</style></head>
+<body class="innerPanel">
+<form name="aspnetForm" method="post" action="./GB.html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+theForm.__EVENTTARGET.value = eventTarget;
+theForm.__EVENTARGUMENT.value = eventArgument;
+theForm.submit();
+}
+}
+//]]>
+</script>
+
+
+<script src="wjs.js" type="text/javascript"></script>
+
+
+<script src="Jsz.js" type="text/javascript"></script>
+<script src="3rd.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="4th.js" type="text/javascript"></script>
+<div>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="04A17CD2" />
+<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+</div>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$upanel',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+<div id="ctl00_upanel">
+<div class="topHeader">
+<div class="container">
+<div class="row">
+<div class="col-sm-4 topHeadLeft">
+<a href=" hindi/" target="_blank" >हिंदी</a> &nbsp;|&nbsp;
+
+<a href="http://mail.aiimsbhubaneswar.edu.in/" target="_blank">Webmail</a> &nbsp;|&nbsp;
+<a href="admin/Login.aspx">Login</a> &nbsp;|&nbsp;
+<a href="Sitemap.aspx">Sitemap</a>
+</div>
+<div class="col-sm-8 topHeadRight">
+<a href="https://www.facebook.com/aiimsbhubaneswarodisha/" target="_blank"><strong><i class="fa fa-facebook-square"></i> Facebook</strong></a> &nbsp;|&nbsp;
+<a href="#skip">Skip to Main Content</a> &nbsp;|&nbsp;
+<a href="javascript:void(0);" class="fontDec" id="decfont">A-</a>
+<a href="javascript:void(0);" class="fontNormal" id="resetfont">A</a>
+<a href="javascript:void(0);" class="fontInc" id="incfont">A+</a> &nbsp;|&nbsp;
+<a href="javascript:void(0);" class="theme0 styleswitch" rel="styles0">&nbsp;</a>
+<a href="javascript:void(0);" class="theme1 styleswitch" rel="styles1">&nbsp;</a>
+<a href="javascript:void(0);" class="theme2 styleswitch" rel="styles2">&nbsp;</a>
+<a href="javascript:void(0);" class="theme3 styleswitch" rel="styles3">&nbsp;</a> &nbsp;|&nbsp;
+<a href="screenReaderAccess.aspx">Screen Reader Access</a> &nbsp;|&nbsp;
+<a href="javascript:void(0);" class="zoom_in_out">Text Magnifier</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header">
+<div class="container">
+<div class="row">
+<div class="col-sm-8 col-md-9">
+<div class="pull-left logoPanel">
+<img src="logo.png" alt="All India Institute of Medical Sciences, Bhubaneswar"
+title="All India Institute of Medical Sciences, Bhubaneswar" class="img-responsive" />
+</div>
+<div class="pull-left logoInfoPanel">
+<img src="logoInfo.png" id="imgChange" alt="All India Institute of Medical Sciences, Bhubaneswar"
+title="All India Institute of Medical Sciences, Bhubaneswar" class="img-responsive" />
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="col-sm-4 col-md-3">
+<div class="input-group headSearch">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menuPanel">
+<div class="container">
+<a href="#ctl00_menuBar_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=26vxwOxVXIZpUAqYIgvQuu0d4aiVq63CHD6ln3zuFz13SRu-3Ko4O_bTCCK4u4s7f8nt3Qerjttxbd4YpIArgHDqLxw1&amp;t=636996380731294402" width="0" height="0" style="border-width:0px;" /></a><div class="menuPanel" id="ctl00_menuBar">
+<ul class="level1">
+<li><a class="level1" href="Default.html">Home</a></li><li><a class="level1" href="ContactUs.html">ContactUs</a></li><li><a class="level1" href="#">The Institute</a><ul class="level2">
+<li><a class="level2" href="aboutAIIMS.html">About AIIMS</a></li><li><a class="level2" href="actsRegulations.html">acts & Regulations</a></li><li><a class="level2" href="administration.html">administration</a></li><li><a class="level2" href="campus.html">campus</a></li><li><a class="level2" href="centralFacilities.html">Central Facilities</a></li><li><a class="level2" href="nursing">college Nursing</a></li><li><a class="popout-dynamic level2" href="#">Committees</a><ul class="level3">
+<li><a class="level3" href="coreCommittees.html">coreCommittees</a></li><li><a class="level3" href="otherCommittees.html">otherCommittees</a></li>
+</ul></li><li><a class="level2" href="facultyDirectory.html">Department</a></li><li><a class="popout-dynamic level2" href="MOM.aspx">Minutes of Meeting</a><ul class="level3">
+<li><a class="level3" href="CIB.html">CIB Meeting Minutes</a></li><li><a class="level3" href="GB.html">GB Meeting Minutes</a></li><li><a class="level3" href="IB.html">IB Meeting Minutes</a></li><li><a class="level3" href="SAC.html">SAC Meeting Minutes</a></li><li><a class="level3" href="SFC.html">SFC Meeting Minutes</a></li>
+</ul></li>
+</ul></li><li><a class="level1" href="#">Academics</a><ul class="level2">
+<li><a class="popout-dynamic level2" href="#">Academic Calendar</a><ul class="level3">
+<li><a class="level3" href="clinicalPostingSchedule.html">Clinical Posting Schedule</a></li><li><a class="level3" href="teachingSchedule.html">Teaching Schedule</a></li>
+</ul></li><li><a class="level2" href="Admission.html">Admission</a></li><li><a class="level2" href="conference.html">conference</a></li><li><a class="level2" href="library/">library</a></li><li><a class="popout-dynamic level2" href="Publications.aspx">Publications</a><ul class="level3">
+<li><a class="level3" href="monthlyreport.html"> Monthly report of BMW</a></li>
+</ul></li>
+</ul></li><li><a class="level1" href="#">Result & Research</a><ul class="level2">
+<li><a class="popout-dynamic level2" href="researchcollabation.aspx">Research Collaboration</a><ul class="level3">
+<li><a class="level3" href="internationalcol.html">International Collaboration</a></li><li><a class="level3" href="nationalcollabation.html">National Collaboration</a></li>
+</ul></li><li><a class="popout-dynamic level2" href="researchCommittees.aspx">Research Committees</a><ul class="level3">
+<li><a class="level3" href="researchStem.html">Institute Committee for Stem Cell Research</a></li><li><a class="level3" href="ethicsCommittee.html">Institute Ethics Committee</a></li><li><a class="level3" href="researchCell.aspx">Institute Research Committee</a></li><li><a class="level3" href="IAEC.aspx">Institutional Animal Ethics Committee</a></li><li><a class="level3" href="researchIntellectual.aspx">Intellectual Property Management Committee</a></li><li><a class="level3" href="scientificAdvisory.aspx">ISEC</a></li><li><a class="level3" href="RegulatoryClinicalTrials.aspx">Regulatory Clinical Trials</a></li>
+</ul></li><li><a class="popout-dynamic level2" href="researchProjects.aspx">Research Projects</a><ul class="level3">
+<li><a class="level3" href="Project2014.aspx">Extramural Project</a></li><li><a class="level3" href="Intramural.html">Intramural Project</a></li><li><a class="level3" href="shortterm.aspx">Short Term Student Project</a></li>
+</ul></li><li><a class="popout-dynamic level2" href="researchPublications.aspx">Research Publications</a><ul class="level3">
+<li><a class="level3" href="researchpublication13.aspx">2013-14</a></li><li><a class="level3" href="researchpublication14.aspx">2014-15</a></li><li><a class="level3" href="researchpublication15.aspx">2015-16</a></li><li><a class="level3" href="researchpublication16.aspx">2016-17</a></li><li><a class="level3" href="researchpublication17.aspx">2017-18</a></li><li><a class="level3" href="researchpublication18.aspx">2018-19</a></li><li><a class="level3" href="researchpublication19.aspx">2019-20</a></li><li><a class="level3" href="researchpublication20.aspx">2020-21</a></li><li><a class="level3" href="researchpublication21.aspx">2021-22</a></li><li><a class="level3" href="researchpublication22.aspx">2022-23</a></li><li><a class="level3" href="researchpublication23.aspx">2023-24</a></li>
+</ul></li><li><a class="popout-dynamic level2" href="ResearchResourses.aspx">Research Resourses</a><ul class="level3">
+<li><a class="level3" href="SFACTS.aspx">Link to SFACTS</a></li>
+</ul></li>
+</ul></li><li><a class="level1" href="#">Hospital Services</a><ul class="level2">
+<li><a class="level2" href="ABQC.html">Aiims Bbsr Quality Council</a></li><li><a class="level2" href="ayush.html">ayush</a></li><li><a class="level2" href="executivehealthcheckup.aspx">Executive Health Check Up</a></li><li><a class="level2" href="IPD.aspx">IPD</a></li><li><a class="level2" href="OPD/Default.html">OPD</a></li><li><a class="level2" href="sops.aspx">SOPs Infection Control Department</a></li><li><a class="level2" href="TravelHealthClinic.html">Travel Health Clinic</a></li><li><a class="level2" href="yellowfevervaccination.aspx">Yellow fever vaccination</a></li>
+</ul></li>
+</ul>
+</div><a id="ctl00_menuBar_SkipLink"></a>
+</div>
+</div>
+
+<div class="innerBanner">
+<img src="innerBanner.jpg" alt="" title="" class="img-responsive" />
+</div>
+<a href="#" name="skip"></a>
+<div id="zoom">
+<div class="small">
+<div class="InnerContainer">
+<div class="container">
+<span style="margin-left:2%;"></span> <div id="headingOne" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/1st GB minutes.pdf" target="_blank"> Download 1st GB Meeting Minutes </a> </div> <div id="headingTwo" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/2nd GB minutes.pdf" target="_blank"> Download 2nd GB Meeting Minutes </a> </div> <div id="headingThree" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/3rd GB minutes.pdf" target="_blank"> Download 3rd GB Meeting Minutes </a> </div> <div id="headingFour" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/4th GB minutes.pdf" target="_blank"> Download 4th GB Meeting Minutes </a> </div> <div id="headingFiver" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/5th GB minutes.pdf" target="_blank"> Download 5th GB Meeting Minutes </a> </div> <div id="headingSix" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/Minutes of 6th Governing Body.pdf" target="_blank"> Download 6th GB Meeting Minutes </a> </div> <div id="headingSeven" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/Minutes of 7th GB of AIIMS BBSR latest.pdf" target="_blank"> Download 7th GB Meeting Minutes </a> </div> <div id="headingSeven" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/9th GB meeting.pdf" target="_blank"> Download 9th GB Meeting Minutes </a> </div> <div id="headingSeven" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/Minutes of 10th Governing Body meeting.pdf" target="_blank"> Download 10th GB Meeting Minutes </a> </div> <div id="headingEight" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/11th GB minutes.pdf" target="_blank">Download 11th GB Meeting Minutes </a> </div> <div id="headingNine" role="tab" class="panel-heading"> <a class="btn btn-success" href="../writereaddata/upload/Documents/Minutes of 12th GB.pdf" target="_blank">Download 12th GB Meeting Minutes </a> </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="topFooter">
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<h2>
+<span>Other AIIMS</span></h2>
+<ul class="list-unstyled">
+<li><a href="http://www.aiims.edu/en.html"
+target="_blank">
+AIIMS New Delhi
+</a> </li>
+<li><a href="http://www.aiimsjodhpur.edu.in/"
+target="_blank">
+AIIMS Jodhpur
+</a> </li>
+<li><a href="http://www.aiimspatna.org/"
+target="_blank">
+AIIMS Patna
+</a> </li>
+<li><a href="http://www.aiimsraipur.edu.in/"
+target="_blank">
+AIIMS Raipur
+</a> </li>
+<li><a href="http://www.aiimsrishikesh.edu.in/"
+target="_blank">
+AIIMS Rishikesh
+</a> </li>
+<li><a href="http://www.aiimsbhopal.edu.in/"
+target="_blank">
+AIIMS Bhopal
+</a> </li>
+<li><a href="http://aiimsgorakhpur.in/"
+target="_blank">
+AIIMS Gorakhpur
+</a> </li>
+<li><a href="https://www.aiimsmangalagiri.edu.in/"
+target="_blank">
+AIIMS Mangalagiri
+</a> </li>
+<li><a href="http://aiimsnagpur.edu.in/"
+target="_blank">
+AIIMS Nagpur
+</a> </li>
+<li><a href="https://aiimsbibinagar.edu.in/"
+target="_blank">
+AIIMS Bibinagar
+</a> </li>
+<li><a href="https://aiimskalyani.edu.in/OtherAIIMS.html"
+target="_blank">
+AIIMS Kalyani
+</a> </li>
+<li><a href="https://www.aiimsdeoghar.edu.in/"
+target="_blank">
+AIIMS Deoghar
+</a> </li>
+<li><a href="https://aiimsrbl.edu.in/"
+target="_blank">
+AIIMS Raebareli
+</a> </li>
+<li><a href="https://aiimsbathinda.edu.in/"
+target="_blank">
+AIIMS Bhathinda
+</a> </li>
+<li><a href="https://aiimsrajkot.edu.in/"
+target="_blank">
+AIIMS Rajkot
+</a> </li>
+<li><a href="https://www.aiimsbilaspur.edu.in/"
+target="_blank">
+AIIMS Bilaspur
+</a> </li>
+<li><a href="https://aiimsguwahati.ac.in/"
+target="_blank">
+AIIMS Guwahati
+</a> </li>
+<li><a href="https://www.aiimsjammu.edu.in/"
+target="_blank">
+AIIMS Vijaypur
+</a> </li>
+</ul>
+</div>
+<div class="col-sm-4">
+<h2>
+<span>Important Links</span></h2>
+<ul class="list-unstyled">
+<li><a href="https://mohfw.gov.in/"
+target="_blank">
+MoHFW
+</a> </li>
+<li><a href="AIIMSDonation.html"
+target="_blank">
+AIIMS Donation
+</a> </li>
+<li><a href="rti.html"
+target="_blank">
+Right To Information Act 2005
+</a> </li>
+<li><a href="Grievance.html"
+target="_blank">
+Grievance
+</a> </li>
+<li><a href="SCST.html"
+target="_blank">
+SCST
+</a> </li>
+<li><a href="AnnualReturn.html"
+target="_blank">
+Annual Return
+</a> </li>
+<li><a href="Vigilance.html"
+target="_blank">
+Vigilance
+</a> </li>
+<li><a href="AllotmentofQuarters.aspx"
+target="_blank">
+Allotment of Quarters
+</a> </li>
+</ul>
+</div>
+<div class="col-sm-4">
+<h2>
+<span>Contact Us</span></h2>
+<div class="media">
+<div class="media-left">
+<i class="fa fa-home fa-fw"></i>
+</div>
+<div class="media-body">
+AIIMS Bhubaneswar<br>
+Sijua, Patrapada,
+<br>
+Bhubaneswar-751019
+</div>
+</div>
+<div class="media">
+<div class="media-left">
+<i class="fa fa-envelope fa-fw"></i>
+</div>
+<div class="media-body">
+E-mail:- <a href="mailto:info@aiimsbhubaneswar.edu.in">info@aiimsbhubaneswar.edu.in</a>
+</div>
+</div>
+<div class="media">
+<div class="media-left">
+<i class="fa fa-phone fa-fw"></i>
+</div>
+<div class="media-body">
+Phone: (0674) 2476789
+</div>
+<br />
+<div class="text-left">
+<a href="http://india.gov.in/" target="_blank">
+<img src="indiaGovImg.png" alt="" title="" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 copyright">
+&copy; 2023 AIIMS Bhubaneswar, All Rights Reserved.&nbsp;&nbsp;&nbsp;
+</div>
+<div class="col-sm-3 powered">
+<a href="https://www.facebook.com/aiimsbhubaneswarodisha/" target="_blank">
+<strong> <i class="fa fa-facebook-square"></i> Facebook</strong></a>
+</div>
+<div class="col-sm-3 ">
+<div class="pull-right"><a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=aiimsbhubaneswar.edu.in','SiteLock','width=600,height=600,left=160,top=170');" ><img class="img-responsive" alt="SiteLock" title="SiteLock" src="//shield.sitelock.com/shield/aiimsbhubaneswar.edu.in" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'ctl00_menuBar', disappearAfter: 500, orientation: 'horizontal', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+</html>
+
