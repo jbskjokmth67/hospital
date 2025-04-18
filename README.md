@@ -1,1 +1,12 @@
-This repository is created **strictly for educational and ethical testing purposes only**.   The tools, scripts, or code provided here are intended to be used **only in environments where you have explicit permission** to test and assess security.   ⚠️ **Unauthorized use of this code against systems you do not own or have permission to test is illegal and unethical.**   ⚠️ The author(s) are **not responsible for any misuse, damage, or legal consequences** resulting from the use of this material.  By using or referencing this repository, you agree to use it **at your own risk and responsibility**, and confirm that your actions will comply with **local, state, and federal laws**.
+> ⚠️ **[ LEGAL DISCLAIMER ]** ⚠️  
+─────────────────────────────────────────────  
+🚫 This tool is **NOT** for illegal activities.  
+🔍 Built for **educational purposes**, **penetration testing**, and **security research** ONLY.  
+🛡️ Use it **only on systems you own** or have **explicit permission** to test.  
+
+🎯 If you use this on unauthorized systems,  
+💀 That’s on **you**, not me.  
+📜 I take **no responsibility** for damage, misuse, or any shady behavior.  
+
+💡 Stay ethical. Stay legal. Hack smart.  
+─────────────────────────────────────────────  
