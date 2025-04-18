@@ -1,0 +1,139 @@
+@media (max-width:768px){
+    .topHeadLeft, .topHeadRight, .copyright, .powered{
+        text-align: center;
+    }
+    .navbar-nav{
+        text-align:left!important;
+    }
+    .navbar-nav > li{
+        display:inherit!important;
+        float: none!important;
+    }
+    .navbar-nav > li > a{
+        font-size: 14px!important;
+        border-right: 0!important;
+        border-bottom: solid 1px #8c0808;
+    }
+    .navbar-toggle{
+        color: #fff;
+    }
+	.large{
+        width:768px;
+    }
+    .logoPanel
+    {
+        width:29px;
+    }
+    .logoInfoPanel
+    {
+        width:212px;
+    }
+	#contScroll{
+		height:189px;
+	}
+}
+@media (min-width:768px){
+    .topHeadRight, .powered{
+        text-align: right;
+    }
+    .headSearch{
+        margin-top: 13px;
+    }
+    .navbar-collapse{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .navbar-nav > li > a{
+        padding-left: 16px!important;
+        padding-right: 16px!important;
+        font-size: 12px!important;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .listImagePanel{
+        width: 143px;
+    }
+	.large{
+        width:768px;
+    }
+    .logoPanel
+    {
+        width:60px;
+    }
+    .logoInfoPanel
+    {
+        width:409px;
+    }
+	#contScroll{
+		height:278px;
+	}
+}
+
+@media (min-width:992px){
+    .headSearch{
+        margin-top: 25px;
+    }
+    .navbar-nav > li > a{
+        padding-left: 18px!important;
+        padding-right: 18px!important;
+        font-size: 16px!important;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .listImagePanel{
+        width: 170px;
+    }
+    .listImgGap{
+        margin-left: 21px;
+    }
+	.large{
+        width:992px;
+    }
+    .logoPanel
+    {
+        width:76px;
+    }
+    .logoInfoPanel
+    {
+        width:609px;
+    }
+	#contScroll{
+		height:278px;
+	}
+}
+
+@media (min-width:1200px){
+    .headSearch{
+        margin-top: 8px;
+    }
+    .navbar-nav > li > a{
+        padding-left: 25px!important;
+        padding-right: 25px!important;
+        font-size: 17px!important;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .listImagePanel{
+        width: 170px;
+    }
+    .listImgGap{
+        margin-left: 71px;
+    }
+	.large{
+        width:1170px;
+    }
+    .logoPanel
+    {
+        width:110px;
+    }
+    .logoInfoPanel
+    {
+        width:722px;
+    }
+	#contScroll{
+		height:278px;
+	}
+}
